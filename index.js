@@ -18,7 +18,9 @@ function addToCart(item) {
 
 function viewCart() {
   var list = "In your cart, you have ";
-  for (var i = 0, i < )
+  for (var i = 0, i < cart.length - 1, i++) {
+    list += `
+  }
 }
 
 function total() {
