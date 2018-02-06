@@ -19,8 +19,7 @@ function addToCart(item) {
 function viewCart() {
   var list = "In your cart, you have ";
   for (var i = 0, i < cart.length - 1, i++) {
-    var item = (Object.key(cart[0]))[0]
-    list += `
+    list += `${(Object.key(cart[0]))[0]} at $${(Object.key(cart[0]))[1]}
   }
 }
 
