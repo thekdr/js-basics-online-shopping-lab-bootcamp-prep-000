@@ -21,7 +21,7 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   } else {
   var list = "In your cart, you have ";
-  for (var i = 0, i < cart.length - 1, i++) {
+  for (var i = 0; i < cart.length - 1; i++) {
     list += `${(Object.key(cart[0]))[0]} at $${(Object.values(cart[0]))[0]}, `;
   }
   list += `and ${(Object.key(cart[0]))[0]} at $${(Object.values(cart[0]))[0]}.`;
@@ -30,7 +30,10 @@ function viewCart() {
 }
 
 function total() {
-    // write your code here
+  var total = 0;
+  for (var i = 0; i < cart.length; i++) {
+    total += parseInt((Object.values(cart[i]))[0]);
+  }
 }
 
 function removeFromCart(item) {
