@@ -34,6 +34,7 @@ function total() {
   for (var i = 0; i < cart.length; i++) {
     total += parseInt((Object.values(cart[i]))[0]);
   }
+  return total;
 }
 
 function removeFromCart(item) {
