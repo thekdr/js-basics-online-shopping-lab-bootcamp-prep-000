@@ -44,9 +44,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var inCart = False;
+  var inCart = True;
   for (var i = 0; i < cart.length; i++) {
-    if () 
+    if (cart[i].hasOwnProperty(item)) {
+      
+    }
   }
 }
 
