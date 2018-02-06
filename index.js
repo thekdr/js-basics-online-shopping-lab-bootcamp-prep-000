@@ -23,6 +23,9 @@ function viewCart() {
   } else if (cart.length === 1) {
     list += `${(Object.keys(cart[0]))[0]} at $${(Object.values(cart[0]))[0]}.`;
     console.log(list);
+  } else if (cart.length === 2) {
+    list += `${(Object.keys(cart[0]))[0]} at $${(Object.values(cart[0]))[0]} and ${(Object.keys(cart[1]))[0]} at $${(Object.values(cart[1]))[0]}.`;
+    console.log(list);
   } else {  
     for (var i = 0; i < cart.length - 1; i++) {
       list += `${(Object.keys(cart[i]))[0]} at $${(Object.values(cart[i]))[0]}, `;
